@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+		<title>Haizhou "Hydro" Li</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="main.css" /> 
+	</head>
+	<body>
+		
+		<!-- Topbar -->
+			<div class="topnav">
+				<a class="active" href="#intro">Home</a>
+				<a href="#one">Experiences</a>
+				<a href="#two">Cv</a>
+				<a href="#three">Get in touch</a>
+				<a href="https://www.linkedin.com/in/haizhou-li/" target="_blank">
+				<img class="icon" src="assets/linkedinlogo.png">
+				</a>
+				<a href="https://github.com/Hydr0li" target="_blank">
+					<img class="icon" src="assets/GitHubMark.png">
+				</a>
+
+				<p>  © 2022</p>
+			  </div>
+
+
+			<div id="surround">
+				<!-- Intro -->
+					<section id="intro" class="surround style">
+						<div>
+							<section>
+								<h1>About Me</h1>
+								<img class = "avatar" src="assets/ava.jpeg" alt="Avatar" style="width:200px">
+								
+
+
+								  <p>
+									I am Haizhou "Hydro" Li, a graduate student in Computer Science in Metropolitan School, 
+										Boston University. I obtained my bachelor's degree at Virginia Tech in Data Analytics in Economics. 
+										I work with Professor <a href="https://www.leedokyun.com" target="_blank">Dokyun Lee</a> as a Research Assistant
+										for <a href="https://www.bu.edu/questrom/profile/chen-jing/" target="_blank">Chen Jing</a> Ph.D at 
+										<a href="https://www.leedokyun.com/bitlab.html" target="_blank">the BIT Lab</a>.
+								  </p>
+								<p>
+									My research interests include deep learning, applying machine learning, 
+									data analysis, Algorithm, and data mining. 
+									I have worked on automatically checking abnormal data and predictive models 
+									for company cost by using data analysis.</p>
+
+							</section>
+						</div>
+					</section>
+					
+
+				<!-- One -->
+					<section id="one" class="surround style">
+						<section>
+							<div class="content">
+								<div>
+									
+									<h1>Research Projects</h1>
+									<p>
+									<strong>Deep Learning NLP algorithm (Natural Language Processing) models.</strong>
+									<br>
+									Research Assistant for Doctor Chen Jing (Boston University). Mentor: Dokyun (DK) Lee (Boston University)
+
+									
+									<br>
+									<p>Work in progress and updated on <button onclick="window.location.href='https://github.com/Hydr0li/RA_NLP';"> Github Here </button>
+									</p>
+
+									<p>
+										<Strong>
+											Economic regression analysis on How the properties of applicants affect credit card application result.
+											<button onclick="window.location.href='https://github.com/Hydr0li/MachineLearningProject';"> Github Here </button>
+										
+										</Strong>
+										<br>
+										Individual Researcher. Mentor: Ali Habibnia (Virginia Tech)
+										<br>
+										2020.8 – 2020.12
+
+									</p>
+
+									<p>
+										<Strong>
+											Last name categorization in census analysis
+											<button onclick="window.location.href='https://github.com/Hydr0li/Last-name-categorization-in-census-analysis';"> Github Here </button>
+										</Strong>
+										<br>
+										Individual Researcher. Mentor: Melinda C. Miller (Virginia Tech)
+										<br>
+										2020.8 – 2020.12
+
+									</p>
+
+									<p>
+										<Strong>
+											Why top 30 universities are top 30? Quantitative analysis on rankings of universities
+											<button onclick="window.location.href='https://github.com/Hydr0li/UniversitiesRankingsRationality';"> Github Here </button>
+										</Strong>
+										<br>
+										Team Leader. Mentor: Chris North (Virginia Tech)
+										<br>
+										2020.8 – 2020.12
+
+									</p>
+
+								</div>
+							</div>
+						</section>
+						
+						<section>
+							<div class="content">
+								<div>
+									<h3>WORK/INTER EXPERIENCE</h3>
+									<p>
+										<Strong>
+											China Tower Xi’an Branch
+											<button onclick="window.location.href='https://github.com/Hydr0li/ChinaTower';"> Github Here </button>
+										</Strong>
+										<br>
+										Software Develop Engineer, Data Analytic group leader.
+										<br>
+										2021.2 – 2021.7
+
+									</p>
+
+									<p>
+										<Strong>
+											China Mobile (Shaanxi) Cloud Computing Center
+										</Strong>
+										<br>
+										Data Science and After-sale Technical Problem Fix group attendee
+										<br>
+										Summer 2019
+
+									</p>
+
+
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two VUE used to hide and show -->
+					<section id="two" class="surround style2">
+						<div>
+							<div id="app">
+								<button class="vuebutton" v-on:click="isHidden = true">Hide CV</button>
+								<button class="vuebutton" v-on:click="isHidden = !isHidden">Show CV</button>
+								
+								<h3 v-if="!isHidden"><p></p>CV <a href="Haizhou_Li_CV.pdf" target="_blank">here</a> <a href="Haizhou_Li_CV.pdf" download="GFG">
+									<button type="button">Download CV</button>
+									</a></h3>
+							  </div>
+							
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="surround style">
+						<div>
+							<h1>Contact</h1>
+							<section>
+								<ul class="contact">
+									<li>
+										<h3>Email</h3>
+										<a href="mailto:hydr0@bu.edu">hydr0@bu.edu</a>
+									</li>
+									<li>
+										<!-- Js presente-->
+										<h3>Phone</h3>
+										<span type="text" value="5409986676" id="myInput"> (540)-998-6676
+										<button onclick="copyToClipboard('5409986676')" onmouseout="outFunc()"> Copy the Number
+										</button>
+									</li>
+								</ul>
+							</section>
+							<!-- external API to add dynamic functionality  -->
+							<div class="container">
+								<form action="/somewhere_it_goes.php" method = "POST" onsubmit = "return Submit();">
+								  <label for="fname">First Name</label>
+								  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+							  
+								  <label for="lname">Last Name</label>
+								  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+							  
+								  <label for="country">Are you currently in the U.S?</label>
+								  <select id="country" name="country">
+									<option value="yes">Yes</option>
+									<option value="no">No</option>
+								  </select>
+								  <label for="subject">Any other words? (Please inclue your email.)</label>
+								  <textarea id="subject" name="subject" placeholder="Anything.." style="height:200px"></textarea>
+								  <input type="submit" onclick="Submit()" value="Submit">
+								</form>
+							  </div>
+							  
+							  
+						</div>
+					</section>
+
+			</div>
+			
+			<script src="script.js"></script>
+	</body>
+</html>
